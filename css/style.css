@@ -100,12 +100,11 @@ body{
 
 .youtube-playlist{
 	border-top: 1px solid lightgrey;
-	border-bottom: 1px solid lightgrey;
 	padding: 5em;
 }
 .header-container{
 	margin-top: 2em;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 .header-section {
@@ -114,11 +113,7 @@ body{
 	color: 	 #737373;
 }
 
-.header-section::first-letter{
-	color: #20a4de;
-	font-size:1.3em;
-	font-weight: bold;
-}
+
 
 .red{
 	color:red;
