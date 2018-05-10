@@ -87,3 +87,13 @@ body{
 	height:25em;
 }
 
+
+.arrow-top {
+	position: fixed;
+	bottom : 3em;
+	right: 2em;
+}
+
+.bigger-size-icon {
+	font-size: 2em;
+}
