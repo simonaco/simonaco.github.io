@@ -97,3 +97,29 @@ body{
 .bigger-size-icon {
 	font-size: 2em;
 }
+
+.youtube-playlist{
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	padding: 5em;
+}
+.header-container{
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.header-section {
+	text-transform: uppercase;
+	font-size: 2em;
+	color: 	 #737373;
+}
+
+.header-section::first-letter{
+	color: #20a4de;
+	font-size:1.3em;
+	font-weight: bold;
+}
+
+.red{
+	color:red;
+}
