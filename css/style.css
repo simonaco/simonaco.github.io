@@ -1,5 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
+    opacity: 1;
+    transition: 3s opacity;
 }
 
 html, body {
@@ -150,3 +152,7 @@ ul {
 .bigger-size-icon {
   font-size: 2em;
 }
+ body.fade-out {
+            opacity: 0;
+            transition: none;
+        }
