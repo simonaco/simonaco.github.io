@@ -90,7 +90,7 @@ ul {
 
 .arrow-top {
     position: fixed;
-    bottom: 3em;
+    bottom: 4.3em;
     right: 2em;
 }
 
@@ -99,3 +99,16 @@ ul {
 }
 
 /*end style*/
+
+.footer{
+    bottom: 0;
+    background: lightgrey;
+    width: 100%;
+    height: 4em;
+    background-color: #007bff;
+    line-height: 4em;
+}
+
+.footer-text{
+    color:white;
+}
