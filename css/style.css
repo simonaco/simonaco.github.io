@@ -52,6 +52,11 @@ ul {
     left: 0;
 }
 
+.fixed-icons{
+    bottom:0;
+    right:0;
+}
+
 .margin2 {
     min-height: 100%;
     /* Fallback for browsers do NOT support vh unit */
