@@ -1,0 +1,82 @@
+/* draw line top to bottom */
+
+.draw-line-top-bottom {
+    stroke-dasharray: 180;
+    animation: dash 3s ease-in;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 180;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* draw line bottom to top */
+
+.draw-line-bottom-top {
+    stroke-dasharray: 180;
+    animation: dash2 2.8s ease-in;
+}
+
+@keyframes dash2 {
+    from {
+        stroke-dashoffset: 180;
+    }
+    to {
+        stroke-dashoffset: 360;
+    }
+}
+
+/* Dots fade in */
+.fade {
+    animation: fadeInLoad 2s;
+  	animation-fill-mode: forwards; 
+    animation-delay: 2.7s;
+}
+@keyframes fadeInLoad {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* Body fade in */
+body {
+    font-family: "Lato", sans-serif;
+    opacity: 1;
+    transition: 3s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+
+
+/* circle of the map pulse */
+.pulse-dot {
+    fill: #003399;
+    transition: all 2s ease;
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse {
+    to {
+        r: 3;
+    }
+}
+
+.front {
+  fill: fadeOut(#ff8800, 10);
+}
+#back {
+  fill: transparent;
+  stroke: fadeOut(#ff8800, 30);
+}
