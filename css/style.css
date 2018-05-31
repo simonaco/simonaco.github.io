@@ -112,3 +112,23 @@ ul {
 .footer-text{
     color:white;
 }
+
+
+/* post style */
+
+.post-title {
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.post-body{
+    font-size: lighter;
+    color: lightgrey;
+
+}
+
+.title-section{
+    margin-bottom: 3em;
+}
