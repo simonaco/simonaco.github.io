@@ -1,9 +1,24 @@
-var conf = $("svg.svg > *");
+$(".cph-modal").hide();
+$(".microsoft-build-modal").hide();
 
-conf.on("click", function() {
-  
-  conf.removeClass("on");
-  $(this).addClass("on");
-  $("#Create").toggle();
+const cph = document.querySelector("circle.cph");
+const microsoftbuild = document.querySelector("circle.microsoft-build");
 
+$(".cph").click(function(event) {
+    var heightTop = $('.cph').offset().top;
+    $(".cph-modal").show().css({ position: "absolute", top: heightTop, left: cph.getBoundingClientRect().x });
+});
+
+$(".microsoft-build").click(function(event) {
+    var heightTopMic = $('.microsoft-build').offset().top;
+    $(".microsoft-build-modal").show().css({ position: "absolute", top: heightTopMic, left: microsoftbuild.getBoundingClientRect().x });
+});
+
+
+$(".close").on("click", function() {
+    $(".microsoft-build-modal").css("display", "none");
+});
+
+$(".close").on("click", function() {
+    $(".cph-modal").css("display", "none");
 });
