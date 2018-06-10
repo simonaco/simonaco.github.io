@@ -85,6 +85,13 @@ ul {
 
 /*end style*/
 
+.blog{
+    margin-top: 6em;
+    margin-bottom: 9em;
+}
+
+
+
 
 /* arrow to top */
 
@@ -118,17 +125,28 @@ ul {
 
 .post-title {
     font-size: 1.4em;
-    font-weight: lighter;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .post-body{
-    font-size: lighter;
-    color: lightgrey;
+    font-weight: 300;
+    color:  #666666;
+}
 
+.post-body::first-letter{
+    color:#20a4de;
 }
 
 .title-section{
     margin-bottom: 3em;
 }
+
+.btn,.btn-info{
+    background-color: #20a4de;
+    border-color: lightgrey;
+}
+.btn,.btn-info{
+    margin-top:2em;
+}
+

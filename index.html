@@ -30,11 +30,11 @@
                 </button>
                 <div class="fixed-sidebar custom-nav margin2 collapse navbar-collapse " id="navbarSupportedContent">
                     <ul>
+                        <li class="nav-item">
+                            <a class="nav-link custom-item" href="#blog">Blog</a>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link custom-item" href="#speaking2">Speaking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-item" href="#training">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-item" href="#training">Training</a>
@@ -74,7 +74,7 @@
                     </svg>
                 </div>
                 <div class="title-section">
-                    <svg viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="blog" viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
                         <text x="258.79" y="20" class="small">b</text>
                         <text x="276.82" y="20" class="small">l</text>
                         <text x="293" y="20" class="small">o</text>
@@ -83,16 +83,27 @@
                 </div>
                 <div class="blog row">
                     <div class="col-6">
-                        <img class="img-fluid"src="img/preview-post.png">
+                        <img class="img-fluid" src="img/preview-post.png">
                     </div>
                     <div class="post col-6">
                         <h3 class="post-title">Build and deploy Angular to the Cloud</h3>
-                        <p class="post-body">As a developer, I want to write code. I want to push my changes to git, get notified when I break the build or tests, fix and then repeat. Is that too much to ask? Apparently, because setting this up in 2017 is still kind of a nightmare. But does it have to be?</p>
+                        <p class="post-body">As a developer, I want to write code. I want to push my changes to git, get notified when I break the build or tests, fix and then repeat. Is that too much to ask? Apparently, because setting this up in 2017 is still kind of a nightmare. But does it have to be?
+                            <br>
+                            <br>In this post we’ll see how we can achieve it all through a series of simple steps:
+                            <br>
+                            <ol class="post-body">
+                                <li>Configure CircleCI to build and test your app on each change pushed to Github</li>
+                                <li>Build a Docker image with updated code and push it to Azure Container Registry</li>
+                                <li>Host your app on Azure and continuously deploy new changes using webhooks</li>
+                            </ol>
+                        </p>
+                        <a href="https://github.com/simonaco/deploy-angular-cloud/blob/master/deploy-angular-cloud.md" class="btn btn-info">
+                        Read More
+                    </a>
                     </div>
-
                 </div>
-                
                 <div>
+
                     <svg viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
                         <text x="221" y="20" class="small">s</text>
                         <text x="241" y="20" class="small">p</text>
@@ -104,6 +115,7 @@
                         <text x="351" y="20" class="small">g</text>
                     </svg>
                 </div>
+
                 <svg class="svg" viewBox="0 0 845.2 458" xmlns="http://www.w3.org/2000/svg">
                     <circle class="st0" cx="826.1" cy="110.3" r="1.9" />
                     <circle class="st0" cx="819.3" cy="110.3" r="1.9" />
@@ -2770,9 +2782,9 @@
         </div>
     </div>
     <footer class="footer">
-      <div class="container text-center">
-        <span class="footer-text">Created by Alexandru Cotin</span>
-      </div>
+        <div class="container text-center">
+            <span class="footer-text">Created by Alexandru Cotin</span>
+        </div>
     </footer>
     <!-- Jquery script & ajax" -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
