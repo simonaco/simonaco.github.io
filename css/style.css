@@ -150,3 +150,50 @@ ul {
     margin-top:2em;
 }
 
+.date{
+    font-weight: 300;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.modal-dialog{
+    max-width: 600px!important;
+}
+
+.youtube-speak{
+    margin-top: 1em;
+}
+
+.speak {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #20a4de;
+}
+
+.bold{
+    font-weight: bold;
+    color: black;
+}
+
+#regModal .frontendunite-body {
+  display: none;
+}
+
+.modal-footer, .dot-center{
+    justify-content: center;
+}
+
+.smaller-size{
+
+    font-size:.5em;
+}
+
+
+.fa-circle:hover{
+    color:red;
+}
+
+.btn, .btn-info, .no-margin{
+    margin-top:0;
+    margin-bottom:2em;
+}
